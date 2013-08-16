@@ -1,0 +1,9 @@
+.main-application-panel {
+    border-color: 1px solid white !important;
+}
+
+.main-application-panel .user .x-panel-header {
+    background-color: #7BA631 !important;;
+    color: #000000;
+    border-color: 1px solid black !important;
+}

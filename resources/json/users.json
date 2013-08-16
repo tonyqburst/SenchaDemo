@@ -1,0 +1,21 @@
+{
+    "success": true,
+    "users": [
+        {
+            "name": 'Tony1',
+            "email": "tony@qburst.com",
+            "account": "Paid"
+        },
+        {
+            "name": 'Tony 2',
+            "email": "tony1@qburst.com",
+            "account": "Free"
+        }
+    ],
+    "accounttypes": [
+        {
+            "type1": 'Paid',
+            "type2": 'Free'
+        }
+    ]
+}
