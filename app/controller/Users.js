@@ -5,7 +5,7 @@ Ext.define('MyApp.controller.Users', {
     views: [
         'user.List',
         'user.Add',
-        'user.Print',
+    //        'user.Chart',
         'user.Edit'
     ],
 
