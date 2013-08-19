@@ -18,7 +18,7 @@ Ext.define('MyApp.view.Main', {
             items: [
                 {
                     width: "50%",
-                    height: 300,
+                    height: 500,
                     xtype: 'userlist',
                     style: {
                         'text-align': 'left',
@@ -43,6 +43,15 @@ Ext.define('MyApp.view.Main', {
                         background: '#525673',
                         border: '0px solid black',
                         'z-index': '1'
+                    }
+                },
+                {
+                    xtype: 'userchart',
+                    width: "50%",
+                    height: 500,
+                    style: {
+                        float: 'right',
+                        top: '-30px'
                     }
                 }
             ]

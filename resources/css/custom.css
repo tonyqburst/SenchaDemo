@@ -7,3 +7,16 @@
     color: #000000;
     border-color: 1px solid black !important;
 }
+
+.main-application-panel .userchart .x-panel-header {
+    background-color: #4D4E47 !important;;
+    color: #ffffff !important;
+    border-color: 1px solid black !important;
+}
+
+.main-application-panel .userchart  .x-box-inner {
+    /*top: -20px;*/
+    width: 100% !important;
+    height: 500px !important;
+    left: 30px;
+}

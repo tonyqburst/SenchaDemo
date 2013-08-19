@@ -2,20 +2,44 @@
     "success": true,
     "users": [
         {
-            "name": 'Tony1',
+            "name": 'Tony Jose',
             "email": "tony@qburst.com",
             "account": "Paid"
         },
         {
-            "name": 'Tony 2',
-            "email": "tony1@qburst.com",
+            "name": 'Muhammed Basil',
+            "email": "basil@qburst.com",
             "account": "Free"
-        }
-    ],
-    "accounttypes": [
+        },
         {
-            "type1": 'Paid',
-            "type2": 'Free'
+            "name": 'Murali P',
+            "email": "muralip@qburst.com",
+            "account": "Free"
+        },
+        {
+            "name": 'Shinoj VM',
+            "email": "shinoj@qburst.com",
+            "account": "Paid"
+        },
+        {
+            "name": 'Jasion James',
+            "email": "jaison@qburst.com",
+            "account": "Paid"
+        },
+        {
+            "name": 'Varun Ashok',
+            "email": "varun@qburst.com",
+            "account": "Free"
+        },
+        {
+            "name": 'Roony Roy',
+            "email": "ronny@qburst.com",
+            "account": "Free"
+        },
+        {
+            "name": 'Rahul Nair',
+            "email": "rahuln@qburst.com",
+            "account": "Paid"
         }
     ]
 }

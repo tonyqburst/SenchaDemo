@@ -18,7 +18,6 @@ Ext.define('MyApp.Application', {
         // TODO: add stores here
 
     ],
-
     init: function () {
         eventManager = new Ext.util.Observable();
     }
