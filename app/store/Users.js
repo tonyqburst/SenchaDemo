@@ -4,22 +4,16 @@ Ext.define('MyApp.store.Users', {
     autoLoad: true,
     listeners: {
         datachanged: function (store) {
-            var free_count = 0, paid_count = 0;
-            store.each(function (rec) {
-                if (rec.get('account') == 'Free') {
-                    free_count += 1;
-                } else {
-                    paid_count += 1;
-                }
-            });
-            var data = [
-                { 'name': 'Paid', 'data': paid_count },
-                { 'name': 'Free', 'data': free_count }
-            ];
-            Ext.getStore('chartStore').loadData(data, false);
+            console.log('data changed');
+            eventManager.fireEvent('drawChart', store)
 
+        },
+        update: function (store) {
+            console.log('udpated');
+            eventManager.fireEvent('drawChart', store)
         }
     },
+
     proxy: {
         type: 'ajax',
         url: 'resources/json/users.json',

@@ -16,6 +16,7 @@ Ext.define('MyApp.controller.Users', {
         eventManager.on('editItem', this.editItem);
         eventManager.on('editSuccess', this.editSuccess);
         eventManager.on('deleteItem', this.deleteItem);
+        eventManager.on('drawChart', this.drawChart);
     },
 
     selectItem: function (ob) {
@@ -43,8 +44,22 @@ Ext.define('MyApp.controller.Users', {
 
     deleteItem: function (rec) {
         Ext.getStore('Users').remove(rec);
+    },
 
+    drawChart: function (store) {
+        var free_count = 0, paid_count = 0;
+        store.each(function (rec) {
+            if (rec.get('account') == 'Free') {
+                free_count += 1;
+            } else {
+                paid_count += 1;
+            }
+        });
+        var data = [
+            { 'name': 'Paid', 'data': paid_count },
+            { 'name': 'Free', 'data': free_count }
+        ];
+        Ext.getStore('chartStore').loadData(data, false);
     }
-
 
 })

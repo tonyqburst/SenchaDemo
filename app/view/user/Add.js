@@ -31,6 +31,7 @@ Ext.define('MyApp.view.user.Add', {
                         name: 'account',
                         fieldLabel: 'Choose Account',
                         editable: false,
+                        allowBlank: false,
                         store: {
                             fields: ['account'],
                             data: [
@@ -40,7 +41,8 @@ Ext.define('MyApp.view.user.Add', {
                         },
                         queryMode: 'local',
                         displayField: 'account',
-                        padding: 5
+                        padding: 5,
+                        value: 'Paid'
                     }
                 ]
             }

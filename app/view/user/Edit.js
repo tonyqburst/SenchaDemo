@@ -31,6 +31,7 @@ Ext.define('MyApp.view.user.Edit', {
                         name: 'account',
                         fieldLabel: 'Choose Account',
                         editable: false,
+                        allowBlank: false,
                         store: {
                             fields: ['account'],
                             data: [

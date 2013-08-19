@@ -51,7 +51,7 @@ var chart = Ext.create('Ext.chart.Chart', {
 Ext.define('MyApp.view.user.Chart', {
     extend: 'Ext.grid.Panel',
     alias: 'widget.userchart',
-    title: 'AllKu ',
+    title: 'Account Type Overview ',
     cls: 'userchart',
     autoShow: true,
     initComponent: function () {

@@ -57,6 +57,7 @@ Ext.define('MyApp.view.user.List', {
             }
         ];
 
+
         function showResult(btn) {
             if (btn == 'yes') {
                 eventManager.fireEvent('deleteItem', rec);

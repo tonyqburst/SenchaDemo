@@ -21,7 +21,7 @@ Ext.define('MyApp.view.Main', {
                     height: 500,
                     xtype: 'userlist',
                     style: {
-                        'text-align': 'left',
+                        'text-align': 'center',
                         float: 'left'
                     }
                 },
@@ -51,7 +51,8 @@ Ext.define('MyApp.view.Main', {
                     height: 500,
                     style: {
                         float: 'right',
-                        top: '-30px'
+                        top: '-30px',
+                        'text-align': 'center',
                     }
                 }
             ]
