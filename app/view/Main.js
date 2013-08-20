@@ -52,7 +52,7 @@ Ext.define('MyApp.view.Main', {
                     style: {
                         float: 'right',
                         top: '-30px',
-                        'text-align': 'center',
+                        'text-align': 'center'
                     }
                 }
             ]

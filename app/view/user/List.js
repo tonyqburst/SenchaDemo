@@ -22,13 +22,12 @@ Ext.define('MyApp.view.user.List', {
             {
                 xtype: 'actioncolumn',
                 width: 50,
+                sortable: false,
+                align: 'center',
                 items: [
                     {
                         icon: 'resources/images/common/edit-icon.png',
                         tooltip: 'Edit',
-                        style: {
-                            'text-align': 'center'
-                        },
                         flex: 1,
                         handler: function (grid, rowIndex, colIndex) {
                             var rec = grid.getStore().getAt(rowIndex);
@@ -40,13 +39,12 @@ Ext.define('MyApp.view.user.List', {
             {
                 xtype: 'actioncolumn',
                 width: 50,
+                sortable: false,
+                align: 'center',
                 items: [
                     {
                         icon: 'resources/images/common/remove_btn.png',
                         tooltip: 'Delete',
-                        style: {
-                            'text-align': 'center'
-                        },
                         flex: 1,
                         handler: function (grid, rowIndex, colIndex) {
                             Ext.MessageBox.confirm('Confirm', 'Are you sure you want to delete ' + Ext.getStore('Users').getAt(rowIndex).get('name') + '?', showResult);
